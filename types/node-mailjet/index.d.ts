@@ -27,9 +27,9 @@ export interface ConfigOptions {
 // *** Email API interfaces *** //
 export namespace Email {
     interface Client {
-        get(action: string): GetResource;
+        get(action: string, options?: ConfigOptions): GetResource;
 
-        put(action: string): PutResource;
+        put(action: string, options?: ConfigOptions): PutResource;
 
         post(action: string, options?: ConfigOptions): PostResource;
     }
@@ -157,9 +157,9 @@ export namespace Email {
 // *** SMS API interfaces *** ///
 export namespace SMS {
     interface Client {
-        get(action: string): GetResource;
+        get(action: string, options?: ConfigOptions): GetResource;
 
-        post(action: string): PostResource;
+        post(action: string, options?: ConfigOptions): PostResource;
     }
 
     // resources
